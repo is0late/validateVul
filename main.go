@@ -202,7 +202,7 @@ func init() {
 	rootCmd.PersistentFlags().IntVarP(&threads, "threads", "t", 10, "并发线程数 (default: 10)")
 	rootCmd.PersistentFlags().StringVarP(&file, "file", "f", "", "目标文件，每行一个目标")
 	rootCmd.PersistentFlags().StringVarP(&pluginName, "module", "m", "", "指定插件名称 (ssh, redis, mysql)")
-	rootCmd.PersistentFlags().StringVarP(&User, "user", "u", "root", "用户名 (default: root)")
+	rootCmd.PersistentFlags().StringVarP(&User, "user", "u", "root", "")
 	rootCmd.PersistentFlags().StringVarP(&password, "password", "p", "", "密码 ( 默认: 弱口令字典)")
 }
 
