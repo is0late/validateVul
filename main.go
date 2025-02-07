@@ -20,12 +20,13 @@ var (
 	pluginName string
 	User       string
 	password   string //  统一密码参数
+	version    string = "0.1"
 )
 
 var rootCmd = &cobra.Command{
 	Use:   "validateVul",
 	Short: "validateVul is a vulnerability validation tool",
-	Long: `validateVul 漏洞验证工具 
+	Long: `validateVul 漏洞验证工具 (v` + version + `)
   * 支持 SSH、Redis、Mysql 弱口令/未授权访问检测
   * 支持单个目标、IP 段、文件批量目标检测
 
